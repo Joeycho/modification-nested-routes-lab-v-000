@@ -54,7 +54,7 @@ class SongsController < ApplicationController
       end
   else
     @song = Song.find(params[:id])
-    @artist_exist = 0
+    @song.artist = nil
   end
   end
 
