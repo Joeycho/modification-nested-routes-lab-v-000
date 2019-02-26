@@ -26,11 +26,11 @@ class SongsController < ApplicationController
   end
 
   def new
+    binding.pry
     @song = Song.new
   end
 
   def create
-    binding.pry
     @song = Song.new(song_params)
 
     if @song.save
